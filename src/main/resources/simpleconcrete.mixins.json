@@ -3,7 +3,7 @@
 	"package": "net.diemond_player.simpleconcrete.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+      "ConcretePowderBlockMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
