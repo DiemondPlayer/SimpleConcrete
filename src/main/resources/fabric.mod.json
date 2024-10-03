@@ -3,7 +3,7 @@
 	"id": "simpleconcrete",
 	"version": "1.0-1.21.1",
 	"name": "Simple Concrete",
-	"description": "Turn concrete powder into concrete using cauldron",
+	"description": "Turn concrete powder into concrete by right-clicking a cauldron. Fully compatible with modded concrete.",
 	"authors": [
 		"Diemond_Player"
 	],
@@ -27,6 +27,5 @@
 		"java": ">=21"
 	},
 	"suggests": {
-		"another-mod": "*"
 	}
 }
