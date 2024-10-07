@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "simpleconcrete",
-	"version": "1.0-1.20.5",
+	"version": "1.0-1.20.6",
 	"name": "Simple Concrete",
 	"description": "Turn concrete powder into concrete by right-clicking a cauldron. Fully compatible with modded concrete.",
 	"authors": [
@@ -23,7 +23,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.16.5",
-		"minecraft": "~1.20.5",
+		"minecraft": "~1.20.6",
 		"java": ">=17"
 	},
 	"suggests": {
