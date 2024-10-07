@@ -19,13 +19,13 @@ public class SimpleConcreteCauldronBehaviors {
         List<Block> list = Registries.BLOCK.stream().filter(
                 block -> block instanceof ConcretePowderBlock).toList();
         for(Block block : list){
-            WATER_CAULDRON_BEHAVIOR.put(block.asItem(), HARDEN_CONCRETE_POWDER);
+            WATER_CAULDRON_BEHAVIOR.map().put(block.asItem(), HARDEN_CONCRETE_POWDER);
         }
     }
 
     public static final CauldronBehavior HARDEN_CONCRETE_POWDER = (state, world, pos, player, hand, stack) -> {
         if (!world.isClient) {
-            ItemStack itemStack = new ItemStack(((IConcretePowderAccessor)((ConcretePowderBlock)((BlockItem)stack.getItem()).getBlock())).simpleConcrete$getHardenedState().getBlock());
+            ItemStack itemStack = new ItemStack(((IConcretePowderAccessor)((ConcretePowderBlock)((BlockItem)stack.getItem()).getBlock())).simpleConcrete$getHardenedState());
             itemStack.setCount(stack.getCount());
             player.setStackInHand(hand, itemStack);
             player.incrementStat(Stats.USE_CAULDRON);

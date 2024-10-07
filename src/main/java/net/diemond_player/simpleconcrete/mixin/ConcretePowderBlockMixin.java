@@ -11,10 +11,10 @@ import org.spongepowered.asm.mixin.Shadow;
 @Mixin(ConcretePowderBlock.class)
 public abstract class ConcretePowderBlockMixin implements IConcretePowderAccessor {
 
-	@Shadow @Final private BlockState hardenedState;
+	@Shadow @Final private Block hardenedState;
 
 	@Override
-	public BlockState simpleConcrete$getHardenedState() {
+	public Block simpleConcrete$getHardenedState() {
 		return hardenedState;
 	}
 }
