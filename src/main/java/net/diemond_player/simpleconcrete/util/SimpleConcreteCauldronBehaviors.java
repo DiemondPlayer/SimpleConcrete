@@ -8,7 +8,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.stat.Stats;
-import net.minecraft.util.ActionResult;
+import net.minecraft.util.ItemActionResult;
 
 import java.util.List;
 
@@ -31,7 +31,7 @@ public class SimpleConcreteCauldronBehaviors {
             player.incrementStat(Stats.USE_CAULDRON);
             LeveledCauldronBlock.decrementFluidLevel(state, world, pos);
         }
-        return ActionResult.success(world.isClient);
+        return ItemActionResult.success(world.isClient);
     };
 
 }
