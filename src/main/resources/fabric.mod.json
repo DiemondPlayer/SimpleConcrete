@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "simpleconcrete",
-	"version": "1.0-1.21.2-1.21.4",
+	"version": "${version}",
 	"name": "Simple Concrete",
 	"description": "Turn concrete powder into concrete by right-clicking a cauldron. Fully compatible with modded concrete.",
 	"authors": [
@@ -10,7 +10,7 @@
 	"contact": {
 		"sources": "https://github.com/DiemondPlayer/SimpleConcrete"
 	},
-	"license": "MIT",
+	"license": "ARR",
 	"icon": "assets/simpleconcrete/icon.png",
 	"environment": "*",
 	"entrypoints": {
